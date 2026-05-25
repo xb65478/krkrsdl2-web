@@ -1,0 +1,20 @@
+*.o
+.DS_Store
+*.a
+*.exe
+*.7z
+.externalNativeBuild
+.gradle
+android-project/app/.cxx/
+# build
+build/
+
+# 忽略 build_web 文件夹下的所有中间编译缓存，只保留最终的 wasm 相关产物
+build_web/*
+!build_web/krkrsdl2.js
+!build_web/krkrsdl2.wasm
+!build_web/krkrsdl2.worker.js
+!build_web/index.html
+
+# FFmpeg source/install trees are produced by build_ffmpeg_wasm.sh.
+external/ffmpeg/
